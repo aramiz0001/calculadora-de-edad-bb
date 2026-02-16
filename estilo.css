@@ -1,0 +1,103 @@
+:root {
+    --purple: #854dff;
+    --off-white: #f0f0f0;
+    --light-grey: #dbdbdb;
+    --smokey-grey: #716f6f;
+    --off-black: #141414;
+}
+
+body {
+    background-color: var(--off-white);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 50px;
+    border-radius: 24px 24px 150px 24px; /* Esquina inferior derecha curva */
+    width: 100%;
+    max-width: 650px;
+}
+
+.input-group {
+    display: flex;
+    gap: 30px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-field label {
+    color: var(--smokey-grey);
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.input-field input {
+    width: 120px;
+    padding: 12px 20px;
+    font-size: 32px;
+    font-weight: 800;
+    border: 1px solid var(--light-grey);
+    border-radius: 8px;
+    outline: none;
+}
+
+.input-field input:focus {
+    border-color: var(--purple);
+}
+
+/* Divisor con botón circular */
+.divider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid var(--light-grey);
+}
+
+#submit-btn {
+    background-color: var(--off-black);
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit-btn:hover {
+    background-color: var(--purple);
+}
+
+/* Resultados */
+.results h1 {
+    font-size: 84px;
+    font-weight: 800;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.1;
+    color: var(--off-black);
+}
+
+.results span {
+    color: var(--purple);
+    letter-spacing: 10px;
+}
