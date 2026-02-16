@@ -23,10 +23,11 @@ document.getElementById('submit-btn').addEventListener('click', () => {
     const m = m2 - m1;
     const y = y2 - y1;
 
-    // Validación simple para no mostrar NaN o negativos
+
     if(!isNaN(y) && !isNaN(m) && !isNaN(d)) {
         document.getElementById('res-years').innerText = y;
         document.getElementById('res-months').innerText = m;
         document.getElementById('res-days').innerText = d;
     }
+
 });
